@@ -1,6 +1,7 @@
 @import '../../styles/settings.scss';
 
 .button {
+  min-width: 95px;
   background: $color-success;
   border: 0;
   color: $color-light;
