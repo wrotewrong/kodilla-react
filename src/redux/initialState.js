@@ -1,4 +1,6 @@
 const initialState = {
+  searchCardTitle: '',
+
   columns: [
     {
       id: 1,

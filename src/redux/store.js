@@ -13,6 +13,11 @@ const reducer = (state, action) => {
         ...state,
         cards: [...state.cards, action.payload],
       };
+    case 'SEARCH_CARD':
+      return {
+        ...state,
+        searchCardTitle: action.payload,
+      };
     default:
       return state;
   }
