@@ -18,7 +18,7 @@ export const ListForm = () => {
   };
 
   return (
-    <form className={styles.columnForm} onSubmit={handleSubmit}>
+    <form className={styles.listForm} onSubmit={handleSubmit}>
       <span>Title:</span>
       <TextInput
         type='text'
