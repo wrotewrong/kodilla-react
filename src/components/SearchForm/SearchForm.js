@@ -3,7 +3,7 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { searchCard } from '../../redux/store';
+import { searchCard } from '../../redux/searchCardTitleReducer';
 import { useEffect } from 'react';
 
 const SearchForm = () => {
@@ -17,7 +17,8 @@ const SearchForm = () => {
 
   useEffect(() => {
     dispatch(searchCard(''));
-  }, [dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <form className={styles.searchForm} onSubmit={handleSubmit}>
