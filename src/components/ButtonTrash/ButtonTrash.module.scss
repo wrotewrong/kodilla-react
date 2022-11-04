@@ -9,7 +9,7 @@
   cursor: pointer;
   font-weight: 400;
 
-  &.favorite {
-    color: $color-warning;
+  &:hover {
+    color: $color-dark;
   }
 }

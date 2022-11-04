@@ -11,8 +11,6 @@ export const ButtonFavorite = (props) => {
       )}
       type='text'
       onClick={props.handleClick}
-    >
-      {props.children}
-    </button>
+    ></button>
   );
 };
